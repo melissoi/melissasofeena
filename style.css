@@ -1,0 +1,827 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*--home--*/
+#header{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.logo{
+    margin-top: 30px;
+    width: 70px;
+}
+.row{
+    margin-top: 50px;
+    display: flex;
+    height: 75%;
+    align-items: center;
+}
+.col{
+    flex-basis: 90%;
+    position: relative;
+    width: 100%;
+}
+.col h1{
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+    margin-top: 80px;
+}
+.col p{
+    color: teal;
+    font-size: 19px;
+    line-height: 20px;
+}
+button{
+    width: 300px;
+    color: teal;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px 0;
+    background: gainsboro;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.card{
+    width: 550px;
+    height: 300px;
+    display: block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    transition: transform 0.5s;
+    background-image: url(images/mrsm.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: 0.7s ease;
+    backface-visibility: hidden;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+.middle{
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.col:hover .card{
+    opacity: 0.6;
+}
+.col:hover .middle{
+    opacity: 1;
+}
+.imgtext{
+    background-color: teal;
+    color: gainsboro;
+    font-size: 24px;
+    padding: 16px 25px;
+    font-weight: bold;
+}
+.square{
+    height: 12px;
+    width: 74%;
+    display: inline-block;
+    background-color: cadetblue;
+    margin: 15px 0;
+}
+.line-1{
+    height: 14px;
+    width: 42%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin: 15px 0;
+}
+.line-2{
+    height: 14px;
+    width: 42%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin: 0 75px;
+}
+.line-3{
+    height: 14px;
+    width: 42%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin: 15px 174px;
+}
+#sideNavigation{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background-color: gainsboro;
+    z-index: 2;
+    transition: 0.7s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: cadetblue;
+}
+#menuButton{
+    width: 40px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/*--start--*/
+#start{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.start-lcol{
+    flex-basis: 50%;
+}
+.card1{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background-size: cover;
+    transition: transform 0.5s;
+    margin-left: 80px;
+}
+.card1:hover{
+    transform: translateY(-10px);
+}
+.card1{
+    background-image: url(images/olvan3.jpg);
+    background-position: center;
+}
+.card2{
+    background-image: url(images/olvan7.jpg);
+    background-position: right;
+}
+.card3{
+    background-image: url(images/olvan8.jpg);
+    margin-left: 34%;
+    background-position: center;
+}
+.start-rcol{
+    flex-basis: 50%;
+    text-align: right;
+}
+.line-4{
+    height: 40px;
+    width: 150%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-left: 50%;
+    margin-bottom: 10px;
+}
+.square1{
+    height: 12px;
+    width: 52px;
+    display: inline-block;
+    background-color: cadetblue;
+    margin: 15px 7px;
+}
+.start-text{
+    max-width: 600px;
+    display: inline-block;
+    margin-right: 80px;
+}
+.start-text h1{
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+}
+.start-text p{
+    color: teal;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+/*--lower form--*/
+.line-5{
+    height: 40px;
+    width: 70%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.line-6{
+    height: 40px;
+    width: 7%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.line-7{
+    height: 40px;
+    width: 7%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.line-8{
+    height: 40px;
+    width: 7%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+#classmates{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.card4{
+    width: 24%;
+    height: 40%;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card4:hover{
+    transform: translateY(-10px);
+}
+.card4{
+    background-image: url(images/olvan15.jpg);
+    background-position: center;
+}
+.card5{
+    background-image: url(images/olvan13.jpg);
+    background-position: center;
+}
+.card6{
+    background-image: url(images/olvan20.jpg);
+    background-position: center;
+}
+.card7{
+    background-image: url(images/olvan4.jpg);
+    background-position: center;
+}
+.start-text{
+    max-width: 600px;
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.classmates-text h1{
+    text-align: center;
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.classmates-text p{
+    color: teal;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+table{
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+table, th, td{
+    border: 3px solid cadetblue;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#peoplego{
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.peoplego-text{
+    display: inline-block;
+    text-align: center;
+}
+.peoplego-text h1{
+    text-align: center;
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.peoplego-text p{
+    color: teal;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.line-9{
+    height: 20px;
+    width: 45%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 55%;
+}
+.line-10{
+    height: 20px;
+    width: 45%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-left: 55%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+.card8{
+    width: 24%;
+    height: 40%;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card8:hover{
+    transform: translateY(-10px);
+}
+.card8{
+    background-image: url(images/olvan12.jpg);
+    background-position: center;
+}
+.card9{
+    background-image: url(images/olvan5.jpg);
+    background-position: center;
+}
+.card10{
+    background-image: url(images/olvan1.jpg);
+    background-position: center;
+}
+.card11{
+    background-image: url(images/olvan6.jpg);
+    background-position: center;
+}
+.card12{
+    background-image: url(images/olvan21.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.card13{
+    background-image: url(images/olvan16.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.card14{
+    background-image: url(images/olvan19.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.card15{
+    background-image: url(images/olvan10.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+
+/*--upper form--*/
+#newpeople{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.newp-lcol{
+    flex-basis: 50%;
+}
+.newp-lcol video{
+    margin-left: 80px;
+}
+.newp-rcol{
+    flex-basis: 50%;
+}
+.line-11{
+    height: 40px;
+    width: 56%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-top: 30px;
+}
+.line-12{
+    height: 40px;
+    width: 3%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.line-13{
+    height: 40px;
+    width: 3%;
+    background-color: rgba(95, 158, 160, 0.87);
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.line-14{
+    height: 40px;
+    width: 3%;
+    background-color: rgba(95, 158, 160, 0.712);
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.line-15{
+    height: 40px;
+    width: 3%;
+    background-color: rgba(95, 158, 160, 0.466);
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.line-16{
+    height: 40px;
+    width: 3%;
+    background-color: rgba(95, 158, 160, 0.247);
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 30px;
+    
+}
+.newp-text{
+    margin-right: 80px;
+    display: inline-block;
+    text-align: left;
+}
+.newp-text h1{
+    text-align: center;
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+    margin-bottom: 30px;
+}
+.newp-text p{
+    color: teal;
+    margin-bottom: 30px;
+}
+.card16{
+    width: 150px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background-size: cover;
+    transition: transform 0.5s;
+    margin-left: 10px;
+    margin-bottom: 80px;
+}
+.card16:hover{
+    transform: translateY(-10px);
+}
+.card16{
+    background-image: url(images/nvan9.jpg);
+    background-position: center;
+}
+.card17{
+    background-image: url(images/nvan12.jpg);
+    background-position: center;
+}
+.line-18{
+    height: 20px;
+    width: 10%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-left: 20px;
+}
+.line-19{
+    height: 20px;
+    width: 10%;
+    background-color: rgba(95, 158, 160, 0.87);
+    display: inline-block;
+    margin-left: 20px;
+}
+.line-20{
+    height: 20px;
+    width: 10%;
+    background-color: rgba(95, 158, 160, 0.712);
+    display: inline-block;
+    margin-left: 20px;
+}
+.line-21{
+    height: 20px;
+    width: 10%;
+    background-color: rgba(95, 158, 160, 0.466);
+    display: inline-block;
+    margin-left: 20px;
+}
+.line-22{
+    height: 20px;
+    width: 10%;
+    background-color: rgba(95, 158, 160, 0.247);
+    display: inline-block;
+    margin-left: 23%; 
+}
+
+/*--more activities--*/
+#act{
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.act-text{
+    display: inline-block;
+    text-align: center;
+}
+.act-text h1{
+    text-align: center;
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.act-text p{
+    color: teal;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 30px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.card18{
+    width: 24%;
+    height: 40%;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card18:hover{
+    transform: translateY(-10px);
+}
+.card18{
+    background-image: url(images/nvan4.jpg);
+    background-position: center;
+}
+.card19{
+    background-image: url(images/nvan11.jpg);
+    background-position: center;
+}
+.card20{
+    background-image: url(images/nvan10.jpg);
+    background-position: center;
+}
+.card21{
+    background-image: url(images/nvan13.jpg);
+    background-position: center;
+}
+.card22{
+    background-image: url(images/taekwondo.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.card23{
+    background-image: url(images/taekwondo2.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.card24{
+    background-image: url(images/taekwondo3.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.card25{
+    background-image: url(images/taekwondo4.jpg);
+    background-position: center;
+    margin-bottom: 80px;
+}
+.line-23{
+    height: 20px;
+    width: 150%;
+    background-color: cadetblue;
+    display: inline-block;
+    margin-top: 10px;
+}
+.line-24{
+    height: 20px;
+    width: 150%;
+    background-color: rgb(107, 184, 187);
+    display: inline-block;
+}
+.line-25{
+    height: 20px;
+    width: 150%;
+    background-color: rgb(117, 199, 202);
+    display: inline-block;
+}
+.line-26{
+    height: 20px;
+    width: 150%;
+    background-color: rgb(130, 220, 223);
+    display: inline-block;
+}
+
+/*---the end---*/
+
+#end{
+    padding: 100px 0;
+}
+.end-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.end-rcol{
+    flex-basis: 50%;
+}
+.end-text{
+    display: inline-block;
+    text-align: right;
+    margin-right: 100px;
+    margin-left: 80px;
+}
+.end-text h1{
+    text-align: center;
+    font-size: 45px;
+    color:rgb(3, 75, 75);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 10px solid teal;
+    padding: 20px 0;
+}
+.end-text p{
+    color: teal;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+.end-lcol{
+    flex-basis: 50%;
+}
+.card26{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background-size: cover;
+    transition: transform 0.5s;
+    margin-top: 30px;
+}
+.card26:hover{
+    transform: translateY(-10px);
+}
+.card26{
+    background-image: url(images/end2.jpg);
+    background-position: center;
+}
+.card27{
+    background-image: url(images/end4.jpg);
+    background-position: center;
+}
+.card28{
+    background-image: url(images/end3.jpg);
+    background-position: center;
+}
+.card29{
+    background-image: url(images/end5.jpg);
+    background-position: center;
+}
+.line-27{
+    height: 20px;
+    width: 150%;
+    background-color: rgb(130, 220, 223);
+    display: inline-block;
+    margin-top: 10px;
+}
+.line-28{
+    height: 20px;
+    width: 150%;
+    background-color: rgb(117, 199, 202);
+    display: inline-block;
+}
+.line-29{
+    height: 20px;
+    width: 150%;
+    background-color: rgb(107, 184, 187);
+    display: inline-block;
+}
+.line-30{
+    height: 20px;
+    width: 150%;
+    background-color: cadetblue;
+    display: inline-block;
+}
+
+/*--icons--*/
+.icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.icons img{
+    display: block;
+    width: 25px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+}
+
+/*--form--*/
+form{
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 100%;
+}
+input[type=text], select{
+    width: 45%;
+    height: 30%;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 3px solid teal;
+    box-sizing: border-box;
+    column-span: 3;
+    row-gap: 10;
+    resize: vertical;
+}
+input[type=submit]{
+    width: 20%;
+    background-color: gainsboro;
+    color: teal;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+input[type=submit]:hover {
+	background-color: rgb(168, 166, 166);
+	text-align: center;
+}
+input[type=reset]{
+    width: 20%;
+    background-color: gainsboro;
+    color: teal;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+input[type=reset]:hover {
+	background-color: rgb(168, 166, 166);
+	text-align: center;
+}
+input[type=textarea]{
+    width: 45%;
+    height: 30%;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 3px solid teal;
+    box-sizing: border-box;
+    column-span: 3;
+    row-gap: 10;
+    resize: vertical;
+}
