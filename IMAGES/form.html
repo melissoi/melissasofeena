@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script type= "text/javascript" src="formval.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body style= "background-image: url(images/background.jpg);">
+        <form name="comment" method="post" action="https://formsubmit.co/feenalyssa@gmail.com">
+            Please Enter Your Name : <br>
+            <input type="text" name="myName"> <br>
+            <br>
+            Gender : <br>
+            <input type="radio" name="myGender" value="Male">Male
+            <input type="radio" name="myGender" value="Female">Female
+            <input type="radio" name="myGender" value="Secret">Rather Not Say
+            <br>
+            <br>
+            Email : <br>
+            <input type="text" name="myEmail"> <br>
+            <br>
+            Choose Reasons Why You Are Here : <br>
+            <br>
+            <input type="checkbox" name="option1">I am interested to study in MRSM. <br>
+            <input type="checkbox" name="option2">I am here for some research about MRSM. <br>
+            <input type="checkbox" name="option3">I stumbled on this website and got interested. <br>
+            <input type="checkbox" name="option4">I got questions about MRSM. <br>
+            <input type="checkbox" name="option5">No reason. <br>
+            <br>
+            Leave a comment or question! <br>
+            <textarea name="response" rows="8" cols="40" placeholder="Enter Text Here."></textarea> <br>
+            <br>
+            <p><input type="submit" name="SUBMIT" value="Submit" onclick="check()"> 
+            <input type="reset" name="reset" value="Reset"></p>
+            </form>
+    </body>
+</html>
